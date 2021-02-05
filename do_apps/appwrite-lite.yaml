@@ -1,0 +1,18 @@
+name: appwrite-lite
+region: fra
+services:
+- dockerfile_path: Dockerfile
+  envs:
+  - key: _APP_ENV
+    scope: RUN_TIME
+    value: development
+  github:
+    branch: feat-do-apps-platform
+    deploy_on_push: true
+    repo: lohanidamodar/lite
+  http_port: 80
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  name: appwrite-lite
+  routes:
+  - path: /
