@@ -6,6 +6,9 @@ services:
   - key: _APP_ENV
     scope: RUN_TIME
     value: development
+  - key: _APP_SETUP
+    scope: RUN_TIME
+    value: self-hosted-do-apps-platform
   github:
     branch: feat-do-apps-platform
     deploy_on_push: true
